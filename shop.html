@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#index.html"><img src="img/picture1.jpg" height="49" width="170"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="okagel.html">OkaGel</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="shop.html">Shop</a>
+				</li>
+			</ul>
+		</div>
+  </div>
+</nav>
+
+<!--Shop-->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Shop</h1>
+		</div>
+		<hr>
+	</div> 
+</div>
+
+<!--Shop Items-->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+    <div class="col-lg-2">
+			<img src="img/biogel.png" class ="img-fluid">
+    </div>
+		<div class="col-md-12 col-lg-4">
+      <h1>Item Name</h1>	
+			<p>Short description of item.</p>
+			<br>	
+    </div>	
+    <div class="col-md-12 col-lg-4">
+      <br>
+      <br>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+    </div>	
+	</div>
+</div>
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+    <div class="col-lg-2">
+			<img src="img/biogel.png" class ="img-fluid">
+    </div>
+		<div class="col-md-12 col-lg-4">
+      <h1>Item Name</h1>	
+			<p>Short description of item.</p>
+			<br>	
+    </div>	
+    <div class="col-md-12 col-lg-4">
+      <br>
+      <br>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+    </div>	
+	</div>
+</div>
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+    <div class="col-lg-2">
+			<img src="img/biogel.png" class ="img-fluid">
+    </div>
+		<div class="col-md-12 col-lg-4">
+      <h1>Item Name</h1>	
+			<p>Short description of item.</p>
+			<br>	
+    </div>	
+    <div class="col-md-12 col-lg-4">
+      <br>
+      <br>
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+    </div>	
+	</div>
+</div>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid passing">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img src="img/picture1.jpg" height="49" width="170">
+				<hr class="light">
+				<p>555-555-5555</p>
+				<p>email</p>
+				<p>physical address</p>
+				<p>city, state, country etc</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Our Hours</h5>
+				<hr class="light">
+				<p>days and hours 1</p>
+				<p>days and hours 2</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Locations</h5>
+				<hr class="light">
+				<p>City, State, Zip</p>
+				<p>City, State, Zip</p>
+				<p>City, State, Zip</p>
+				<p>City, State, Zip</p>
+				<p>City, State, Zip</p>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>The GelMA Company</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+</body>
+</html>
